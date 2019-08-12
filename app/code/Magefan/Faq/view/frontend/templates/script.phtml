@@ -1,0 +1,7 @@
+<?php
+$viewModel = $block->getData('viewModel');
+?>
+<?php foreach ($viewModel->getItems() as $page): ?>
+    <p><?= $page->getIdentifier() . ' - ' . $page->getTitle();?></p>
+<?php endforeach; ?>
+
